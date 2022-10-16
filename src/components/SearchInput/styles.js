@@ -21,6 +21,20 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto_400Regular',
     fontSize: 16,
     color: '#9E9E9E'
+  },
+  inputBox: {
+    backgroundColor: 'white',
+    width: 335,
+    height: 48,
+    borderColor: '#DFDFDF',
+    margin: 10,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderRadius: 4,
+    borderWidth: 1,
+    fontFamily: 'Roboto_400Regular',
+    fontSize: 16,
+    color: '#9E9E9E'
   }
 });
 

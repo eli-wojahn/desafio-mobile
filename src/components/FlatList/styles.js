@@ -4,17 +4,6 @@ const styles = StyleSheet.create({
     container: {
         alignItems: 'center'
       },
-    bluBox: {
-        backgroundColor: '#5984C0',
-        alignItems: 'center',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        padding: 10,
-        width: 335,
-        height: 47,
-        borderTopRightRadius: 5,
-        borderTopLeftRadius: 5,
-    },
     textWhiteBox: {
         color: 'black',
         fontFamily: 'Roboto_400Regular',
@@ -30,14 +19,19 @@ const styles = StyleSheet.create({
       witheBox2: {
         backgroundColor: 'white',
         width: 335,
-        borderBottomRightRadius: 5,
-        borderBottomLeftRadius: 5,
-        margin: 2,
+        // borderBottomRightRadius: 5,
+        // borderBottomLeftRadius: 5,
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
         padding: 10,
       },
+      separator: {
+        height: 1,
+        width: '100%',
+        backgroundColor: '#DFDFDF'
+      },
+      
 
 });
 

@@ -17,7 +17,8 @@ const BlueBox = () => {
         <View style={styles.bluBox}>
             <Text style={styles.textBlue}>FOTO</Text>
             <Text style={styles.textBlue}>NOME</Text>
-            <Text style={styles.textBlue}>PONTO</Text>
+            {/* <Text style={styles.textBlue}>PONTO</Text> */}
+            <Image source={require('../../assets/elipse.png')} style={styles.elipse}></Image>
         </View>
         </View>
     );

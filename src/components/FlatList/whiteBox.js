@@ -3,6 +3,8 @@ import { View, Image, Text } from 'react-native';
 import styles from './styles';
 import { useFonts, Roboto_400Regular, Roboto_500Medium } from '@expo-google-fonts/roboto';
 
+import FlatList from './flatList';
+
 const WhiteBox = () => {
     let [fontsLoaded] = useFonts({
         Roboto_400Regular,
@@ -14,61 +16,7 @@ const WhiteBox = () => {
     }
     return (
         <View style={styles.container}>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
-        <View style={styles.witheBox2}>
-            <Text style={styles.textWhiteBox}>FOTO</Text>
-            <Text style={styles.textWhiteBox}>NOME</Text>
-            <Text style={styles.textWhiteBox}>SETA</Text>
-        </View>
+            <FlatList/>
         </View>
     );
 };

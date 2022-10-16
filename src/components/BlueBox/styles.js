@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        padding: 10,
+        padding: 25,
         width: 335,
         height: 47,
         borderTopRightRadius: 5,
@@ -20,7 +20,10 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto_400Regular',
         fontSize: 16
     },
-
+    elipse: {
+        width: 8,
+        height: 8
+    }
 });
 
 export default styles;
