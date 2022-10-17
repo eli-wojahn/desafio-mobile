@@ -4,11 +4,9 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center'
   },
-  text: {
-    fontFamily: 'Roboto_400Regular',
-    fontSize: 16,
-  },
-  inputBox: {
+
+  inputBoxFora: {
+    flexDirection: "row",
     backgroundColor: 'white',
     width: 335,
     height: 48,
@@ -22,19 +20,15 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#9E9E9E'
   },
-  inputBox: {
-    backgroundColor: 'white',
-    width: 335,
-    height: 48,
-    borderColor: '#DFDFDF',
-    margin: 10,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderRadius: 4,
-    borderWidth: 1,
+  textoInput: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 16,
     color: '#9E9E9E'
+  },
+  serchIcon: {
+    height: 28,
+    width: 28,
+    marginLeft: 70
   }
 });
 

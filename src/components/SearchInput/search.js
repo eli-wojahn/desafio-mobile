@@ -18,11 +18,18 @@ const Search = () => {
 
     return (
         <View style={styles.container}>
+            <View style={styles.inputBoxFora}>
             <TextInput
-                style={styles.inputBox}
+            style={styles.textoInput}
                 value={searchText}
                 onChangeText={(text) => setSearchText(text)}
-                placeholder='Pesquisar                                                      🔍' />
+                placeholder='Pesquisar' 
+                />
+            <Image
+                source={require('../../assets/search.png')}
+                style={styles.serchIcon}
+            />
+            </View>
         </View>
     );
 };
