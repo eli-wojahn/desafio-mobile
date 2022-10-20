@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity, Button } from 'react-native';
 import { useFonts, Roboto_400Regular, Roboto_500Medium } from '@expo-google-fonts/roboto';
 
 import styles from './styles';
@@ -9,11 +9,13 @@ const Flatlist = () => {
     const [employees, setEmployees] = useState([]);
 
     useEffect(() => {
-        api.get("/employees").then((response) => {
+        async function fetchData() {
+          const response = await api.get("/employees").then((response) => {
             // console.log(response.data);
-            setEmployees(response.data);
-        }).catch(error => console.log(error))
-    }, []);
+            setEmployees(response.data);})
+        }
+        fetchData();
+      }, []); 
 
     let [fontsLoaded] = useFonts({
         Roboto_400Regular,
@@ -33,14 +35,11 @@ const Flatlist = () => {
             />
         </View>
     );
-    console.log(employees);
 };
 
 
-
-
 function showEmployee(item) {
-    const { name, job, admission_date, image } = item.item
+    const { name, job, admission_date, image } = item.item;
 
     return (
         <View >
@@ -51,7 +50,6 @@ function showEmployee(item) {
                         style={{ width: 34, height: 34, borderRadius: 32, margin: 10 }}
                     />
                     <Text style={{ fontFamily: 'Roboto_400Regular', fontSize: 16 }}>{name}</Text>
-                    {/* <Text style={{ fontFamily: 'Roboto_400Regular' }}>V</Text> */}
                     <Image
                         source={(require('../../assets/chevron-down.png'))}
                         style={{ width: 34, height: 34, margin: 10 }}

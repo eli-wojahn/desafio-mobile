@@ -19,8 +19,6 @@ const styles = StyleSheet.create({
       witheBox2: {
         backgroundColor: 'white',
         width: 335,
-        // borderBottomRightRadius: 5,
-        // borderBottomLeftRadius: 5,
         alignItems: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -31,6 +29,7 @@ const styles = StyleSheet.create({
         width: '100%',
         backgroundColor: '#DFDFDF'
       },
+      
       
 
 });

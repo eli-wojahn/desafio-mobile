@@ -6,7 +6,6 @@ import { useFonts, Roboto_400Regular, Roboto_500Medium } from '@expo-google-font
 const Search = () => {
     const [searchText, setSearchText] = useState('');
 
-
     let [fontsLoaded] = useFonts({
         Roboto_400Regular,
         Roboto_500Medium

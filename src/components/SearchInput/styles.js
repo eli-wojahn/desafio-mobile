@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     fontFamily: 'Roboto_400Regular',
     fontSize: 16,
-    color: '#9E9E9E'
+    color: '#9E9E9E',
+    justifyContent: 'space-between'
   },
   textoInput: {
     fontFamily: 'Roboto_400Regular',
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
   serchIcon: {
     height: 28,
     width: 28,
-    marginLeft: 70
+
   }
 });
 
